@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
+    <title>Mi portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="">
+ 
+
+    <div id="hide_menu">
+      <div id="hide_menu2">
+        <div id="hide_navbar" onclick="slide()">
+          <div class="navbar_line"></div>
+          <div class="navbar_line"></div>
+          <div class="navbar_line"></div>
+        </div>
+        <div onclick="hide_inicio()" class="hide_navmenu">Inicio</div>
+        <div onclick="hide_proyectos()" class="hide_navmenu">Proyectos</div>
+        <div onclick="hide_acerca_de_mi()" class="hide_navmenu">Acerca de mi</div>
+        <div onclick="hide_contacto()" class="hide_navmenu">Contacto</div>
+      </div>
+    </div>
+
+    <div id="contenedor">
+      
+      <header id="header_contenedor">
+        <div id="header_contenedor_2">
+          <div class="paginas" id="pagina1_link"  onclick="inicio()">Inicio</div>
+          <div class="paginas" id="pagina2_link"  onclick="proyectos()">Proyectos</div>
+          <div class="paginas" id="pagina3_link"  onclick="acerca_de_mi()">Acerca de mi</div>
+          <div class="paginas" id="pagina4_link"  onclick="contacto()">Contacto</div>
+          <div id="navbar" onclick="slide()">
+            <div class="navbar_line"></div>
+            <div class="navbar_line"></div>
+            <div class="navbar_line"></div>
+          </div>
+        </div>
+      </header>
+      
+      <section id="pagina_intro">
+        <div id="intro_titulo" data-delay="1s">&lt;p>Si se puede imaginar, se puede programar &lt;/p> </div>
+        <div id="intro_titulo_sub" data-delay="1s">Desarrollador web fullstack</div>
+        <div id="contenedor_flecha_abajo">
+          <div id="flecha" onclick="proyectos()">
+            <svg viewBox="0 0 500 600"> <path style="fill:var(--main_bg);" width="120%" height="120%" d="M245.333,0C109.839,0,0,109.839,0,245.333s109.839,245.333,245.333,245.333 s245.333-109.839,245.333-245.333C490.514,109.903,380.764,0.153,245.333,0z"/><path style="fill:#FAFAFA;" d="M317.867,221.867l-19.2,19.2V117.333c0-29.455-23.878-53.333-53.333-53.333S192,87.878,192,117.333 v123.584l-19.2-19.2c-19.139-18.289-49.277-18.289-68.416,0c-18.889,18.894-18.889,49.522,0,68.416l118.251,118.251 c12.496,12.492,32.752,12.492,45.248,0l118.251-118.251c18.889-18.894,18.889-49.522,0-68.416 C366.975,203.565,336.946,203.631,317.867,221.867z"/></svg>
+          </div>
+          <div id="texto_flecha">Ver proyectos</div>
+        </div>
+      </section>
+
+      <section class="pagina_proyectos">
+        
+        <div id="scroll_to_proyectos"></div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div id="scroll_to_perfil"></div>
+      </section>
+
+      <section id="pagina_acerca_de_mi">
+
+        <div id="perfil_nombre">Federico Nicolás Aguirre</div>
+
+        <div id="perfil_texto" data-delay="1s">Siempre me atrajo la tecnologia, y en el 2018
+          pude iniciar con mis aprendizajes. Disfruto dar vida a las ideas en el
+          navegador, aprendiendo y superando nuevos desafíos. Mi especialidad es
+          el desarrollo front-end con foco en producir páginas y aplicaciones web
+          que sean rápidas, de fácil uso, con un óptimo diseño ux/ui y accesible
+          en un amplio rango de dispositivos y navegadores.
+        </div>
+
+        <div id="contenedor_lenguajes">
+          
+          <div id="lenguajes_titulo_1">Conocimientos tecnicos</div>
+          <div id="lenguajes_titulo_idioma">Idioma</div>
+          <div id="lenguajes_titulo_link">Certificados</div>
+
+            <ul id="lenguajes_1">
+              <li>HTML</li>
+              <li>UX/UI</li>
+              <li>Git+github</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>EcmaScript</li>
+            </ul>
+            <ul id="lenguajes_2">
+              <li>JQuery</li>
+              <li>NodeJS</li>
+              <li>Express</li>
+              <li>ReactJS</li>
+              <li>Redux</li>
+              <li>Angular</li>
+              <li>PHP</li>
+              <li>SQL</li>
+            </ul>
+            <ul id="lenguajes_3">
+              <li>MySQL</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>C++</li>
+              <li>Ruby</li>
+              <li>Linux</li>
+            </ul>
+      
+          <ul id="lenguajes_idioma">
+            <li>Ingles</li>
+            <li>avanzado</li>
+          </ul>
+
+          <a id="certificados_link" href="https://drive.google.com/drive/folders/10ba68nUmdU_Oy7nGn8oUexGqy85KSSnU?usp=sharing" target="_blank">
+            <svg id="" viewBox="0 0 512 512" width="120%" height="120%" style="enable-background:new 0 0 512 512;" xml:space="preserve"><polyline style="fill:#D6C8B0;" points="434.434,279.082 434.434,27.147 115.312,27.147 115.312,366.293 "/><polyline style="fill:#F9EED7;" points="405.747,251.934 405.747,0 86.625,0 86.625,339.145 "/><path style="fill:#FFD15C;" d="M458.517,478.602V287.553c0-20.334-16.483-36.817-36.817-36.817H257.815c-15.138,0-28.732-9.265-34.268-23.354l-7.255-18.468c-5.535-14.089-19.13-23.354-34.268-23.354H90.3c-20.334,0-36.817,16.483-36.817,36.817v256.226c0,18.445,14.953,33.398,33.398,33.398H425.12C443.564,512,458.517,497.047,458.517,478.602z"/><path style="fill:#EDBB4C;" d="M75.286,478.602V222.376c0-20.334,16.483-36.817,36.817-36.817H90.3c-20.334,0-36.817,16.483-36.817,36.817v256.226c0,18.445,14.953,33.397,33.398,33.397h21.803C90.239,511.999,75.286,497.047,75.286,478.602z"/><circle style="fill:#DBCEBA;" cx="167.819" cy="80.225" r="35.468"/><path style="fill:#D6C8B0;" d="M155.241,80.227c0-15.582,10.052-28.806,24.022-33.569c-3.592-1.225-7.439-1.899-11.447-1.899c-19.589,0-35.468,15.879-35.468,35.468c0,19.588,15.879,35.468,35.468,35.468c4.007,0,7.855-0.674,11.447-1.899C165.293,109.033,155.241,95.808,155.241,80.227z"/><path style="fill:#FF525D;" d="M132.347,151.163c0-19.589,15.879-35.468,35.468-35.468s35.468,15.879,35.468,35.468"/><path style="fill:#34ABE0;" d="M363.396,63.069H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,63.069,363.396,63.069z"/><path style="fill:#34ABE0;" d="M363.396,223.181h-46.573c-4.517,0-8.176-3.661-8.176-8.176s3.66-8.176,8.176-8.176h46.573c4.517,0,8.176,3.661,8.176,8.176S367.913,223.181,363.396,223.181z"/><path style="fill:#34ABE0;" d="M363.396,183.154H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,183.154,363.396,183.154z"/><path style="fill:#34ABE0;" d="M363.396,103.097H249.899c-4.515,0-8.176-3.661-8.176-8.176c0-4.515,3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176C371.572,99.437,367.913,103.097,363.396,103.097z"/><path style="fill:#34ABE0;" d="M363.396,143.126H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,143.126,363.396,143.126z"/></svg>
+          </a>
+
+        </div>
+      </section>
+
+      <section id="pagina_contacto">
+
+        <div id="scroll_to_contacto"></div>
+      
+        <div id="form_contenedor"">
+          <form id="form" action="https://formspree.io/mjvapnag"
+          method="POST">
+            <div id="contacto_titulo">Envia tu mensaje</div>
+            <label id="form_guia_nombre" class="form_guias">Nombre</label>
+            <label id="form_guia_email" class="form_guias">Email</label>
+            <input id="form_nombre" type="text" name="nombre" required>
+            <input id="form_email" type="email" name="email" required>
+            <label id="form_guia_asunto" class="form_guias">Asunto</label>
+            <label id="form_guia_telefono" class="form_guias">Telefono (opcional)</label>
+            <input id="form_asunto" type="text" name="asunto" required>
+            <input id="form_telefono" type="tel" name="telefono">
+            <label id="form_guia_consulta" class="form_guias">Consulta</label>
+            <label></label>
+            <textarea name="consulta" class="input"></textarea>
+            <input type="submit" value="Enviar" id="form_boton_enviar">
+          </form>
+        </div>
+    
+        <div id="contacto_info" data-delay="1s">
+          <div id="info_contacto_titulo">Información de contacto</div>
+          <div id="info_direccion">Buenos Aires CABA<br />Balcarce 200</div>
+          <div id="info_email">sedent333@gmail.com</div>
+          <div id="info_telefono">11-2743-5575</div>
+          <svg id="icono_direccion" style="fill: var(--white);" width="110%" height="120%" viewBox="0 0 80 100"><path d="M30,26c3.86,0,7-3.141,7-7s-3.14-7-7-7s-7,3.141-7,7S26.14,26,30,26z M30,14c2.757,0,5,2.243,5,5s-2.243,5-5,5 s-5-2.243-5-5S27.243,14,30,14z"/><path d="M29.823,54.757L45.164,32.6c5.754-7.671,4.922-20.28-1.781-26.982C39.761,1.995,34.945,0,29.823,0 s-9.938,1.995-13.56,5.617c-6.703,6.702-7.535,19.311-1.804,26.952L29.823,54.757z M17.677,7.031C20.922,3.787,25.235,2,29.823,2 s8.901,1.787,12.146,5.031c6.05,6.049,6.795,17.437,1.573,24.399L29.823,51.243L16.082,31.4 C10.882,24.468,11.628,13.08,17.677,7.031z"/><path d="M42.117,43.007c-0.55-0.067-1.046,0.327-1.11,0.876s0.328,1.046,0.876,1.11C52.399,46.231,58,49.567,58,51.5 c0,2.714-10.652,6.5-28,6.5S2,54.214,2,51.5c0-1.933,5.601-5.269,16.117-6.507c0.548-0.064,0.94-0.562,0.876-1.11 c-0.065-0.549-0.561-0.945-1.11-0.876C7.354,44.247,0,47.739,0,51.5C0,55.724,10.305,60,30,60s30-4.276,30-8.5 C60,47.739,52.646,44.247,42.117,43.007z"/></svg>
+          <svg id="icono_email" style="fill: var(--white);" width="120%" height="120%" viewBox="0 0 800 1000"><path d="m467 61h-422c-24.813 0-45 20.187-45 45v300c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-300c0-24.813-20.187-45-45-45zm-65.19 30-145.81 108.785-145.81-108.785zm-356.81 0h15.021l187.009 139.523c2.661 1.985 5.815 2.977 8.97 2.977s6.309-.992 8.97-2.977l187.009-139.523h15.021c8.265 0 14.989 6.719 14.999 14.982l-225.999 168.796-225.999-168.796c.01-8.263 6.734-14.982 14.999-14.982zm202.024 214.518c2.662 1.988 5.819 2.982 8.976 2.982s6.314-.994 8.976-2.982l157.024-117.28v232.762h-332v-232.762zm-217.024 100.482v-262.575l30 22.407v255.168h-15c-8.271 0-15-6.729-15-15zm437 15h-15v-255.168l30-22.407v262.575c0 8.271-6.729 15-15 15z"/></svg>
+          <svg id="icono_telefono" style="fill: var(--white);" width="120%" height="120%" viewBox="0 0 800 1000"><path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818 c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453 l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646 C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539 c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92 c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315 C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173 c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061 l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579 l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379 c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801 c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z"/><path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z"/><path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533 c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533 S286.448,137.59,291.161,137.59z"/><path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z"/></svg>
+          <a id="icono_linkedin" href="https://www.linkedin.com/in/federico-nicolas-aguirre/" target="_blank">
+            <svg viewBox="0 0 120 115"><circle style="fill:#007AB9;" cx="56.098" cy="56.097" r="56.098"/><path style="fill:#F1F2F2;" d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118 c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715 c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662 C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967 c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z M27.865,83.739H41.27V43.409H27.865V83.739z"/></svg>
+          </a>
+          <a id="icono_github" href="https://github.com/Federico-Aguirre" target="_blank">
+            <svg viewBox="0 0 460 438"><path style="fill:var(--white);" width="120%" height="120%" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"/></svg>
+          </a>
+        </div>
+    
+        <div id="contenedor_flecha_arriba" data-delay="1s">
+          <svg onclick="inicio()" viewBox="0 0 600 500"><path style="fill:var(--main_bg);" width="120%" height="120%" d="M245.333,0C109.839,0,0,109.839,0,245.333s109.839,245.333,245.333,245.333 s245.333-109.839,245.333-245.333C490.514,109.903,380.764,0.153,245.333,0z"/><path style="fill:#FAFAFA;" d="M267.968,82.219c-12.496-12.492-32.752-12.492-45.248,0L104.533,200.533 c-18.889,18.894-18.889,49.522,0,68.416c19.139,18.289,49.277,18.289,68.416,0l19.2-19.2v123.584 c0,29.455,23.878,53.333,53.333,53.333c29.455,0,53.333-23.878,53.333-53.333V249.749l19.2,19.2 c19.139,18.289,49.277,18.289,68.416,0c18.889-18.894,18.889-49.522,0-68.416L267.968,82.219z"/></svg>
+        </div>
+      </section>
+    </div>
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="main.js"></script>
+  </body>
+</html>
