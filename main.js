@@ -126,7 +126,7 @@ section2Observer.observe(section2);
 const red3 = document.querySelector("#pagina3_link");
 const section3 = document.querySelector("#pagina_acerca_de_mi");
 const section3Options = {
-  rootMargin: "-310px 0px -326px 0px"
+  rootMargin: "-297px 0px -320px 0px"
 };
 
 const section3Observer = new IntersectionObserver(function(
