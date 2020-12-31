@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
+    <title>Mi portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="">
+ 
+
+    <div id="hide_menu">
+      <div id="hide_menu2">
+        <div id="hide_navbar" onclick="slide()">
+          <div class="navbar_line"></div>
+          <div class="navbar_line"></div>
+          <div class="navbar_line"></div>
+        </div>
+        <div onclick="hide_inicio()" class="hide_navmenu">Inicio</div>
+        <div onclick="hide_proyectos()" class="hide_navmenu">Proyectos</div>
+        <div onclick="hide_acerca_de_mi()" class="hide_navmenu">Acerca de mi</div>
+        <div onclick="hide_contacto()" class="hide_navmenu">Contacto</div>
+      </div>
+    </div>
+
+    <div id="contenedor">
+      
+      <header id="header_contenedor">
+        <div id="header_contenedor_2">
+          <div class="paginas" id="pagina1_link"  onclick="inicio()">Inicio</div>
+          <div class="paginas" id="pagina2_link"  onclick="proyectos()">Proyectos</div>
+          <div class="paginas" id="pagina3_link"  onclick="acerca_de_mi()">Acerca de mi</div>
+          <div class="paginas" id="pagina4_link"  onclick="contacto()">Contacto</div>
+          <div id="navbar" onclick="slide()">
+            <div class="navbar_line"></div>
+            <div class="navbar_line"></div>
+            <div class="navbar_line"></div>
+          </div>
+        </div>
+      </header>
+      
+      <section id="pagina_intro">
+        <div id="intro_titulo" data-delay="1s">&lt;p>Si se puede imaginar, se puede programar &lt;/p> </div>
+        <div id="intro_titulo_sub" data-delay="1s">Desarrollador web fullstack</div>
+        <div id="contenedor_flecha_abajo">
+          <div id="flecha" onclick="proyectos()">
+            <svg viewBox="0 0 500 600"> <path style="fill:var(--main_bg);" width="120%" height="120%" d="M245.333,0C109.839,0,0,109.839,0,245.333s109.839,245.333,245.333,245.333 s245.333-109.839,245.333-245.333C490.514,109.903,380.764,0.153,245.333,0z"/><path style="fill:#FAFAFA;" d="M317.867,221.867l-19.2,19.2V117.333c0-29.455-23.878-53.333-53.333-53.333S192,87.878,192,117.333 v123.584l-19.2-19.2c-19.139-18.289-49.277-18.289-68.416,0c-18.889,18.894-18.889,49.522,0,68.416l118.251,118.251 c12.496,12.492,32.752,12.492,45.248,0l118.251-118.251c18.889-18.894,18.889-49.522,0-68.416 C366.975,203.565,336.946,203.631,317.867,221.867z"/></svg>
+          </div>
+          <div id="texto_flecha">Ver proyectos</div>
+        </div>
+      </section>
+
+      <section class="pagina_proyectos">
+        
+        <div id="scroll_to_proyectos"></div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a href="https://github.com/Federico-Aguirre/react-socket.io" target="_blank" class="swiper-slide">
+              <div class="card_image" id="figma_img"></div>
+              <div class="card_text">Chat app creado con React.js, Socket.io, Express, Cors.</div>
+            </a>           
+            <a href="https://github.com/Federico-Aguirre/react-crud" target="_blank" class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">React CRUD creado con React.js, MySQL, Express, Cors.</div>
+            </a>
+            <a href="https://github.com/Federico-Aguirre/spa-react" target="_blank" class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Spa-React creado con React.js, react-router-dom</div>
+            </a>
+            <a href="https://github.com/Federico-Aguirre/php-sql-crud" target="_blank" class="swiper-slide">
+              <div class="card_image" id="figma_img_2"></div>
+              <div class="card_text">Simple CRUD creado con php, MySQL</div>
+            </a>
+            <a href="https://github.com/Federico-Aguirre/figma-project" class="swiper-slide">
+              <div class="card_image"></div>
+              <div class="card_text">Pagina de inicio creado con Figma</div>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div id="scroll_to_perfil"></div>
+      </section>
+
+      <section id="pagina_acerca_de_mi">
+
+        <div id="perfil_nombre">Federico Nicolás Aguirre</div>
+
+        <div id="perfil_texto" data-delay="1s">Siempre me atrajo la tecnologia, y en el 2018
+          pude iniciar con mis aprendizajes. Disfruto dar vida a las ideas en el
+          navegador, aprendiendo y superando nuevos desafíos. Mi especialidad es
+          el desarrollo front-end con foco en producir páginas y aplicaciones web
+          que sean rápidas, de fácil uso, con un óptimo diseño ux/ui y accesible
+          en un amplio rango de dispositivos y navegadores.
+        </div>
+
+        <div id="contenedor_lenguajes">
+          
+          <div id="lenguajes_titulo_1">Conocimientos tecnicos</div>
+          <div id="lenguajes_titulo_idioma">Idioma</div>
+          <div id="lenguajes_titulo_link">Certificados</div>
+
+            <ul id="lenguajes_1">
+              <li>HTML</li>
+              <li>UX/UI</li>
+              <li>Git+github</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>EcmaScript</li>
+            </ul>
+            <ul id="lenguajes_2">
+              <li>JQuery</li>
+              <li>NodeJS</li>
+              <li>Express</li>
+              <li>ReactJS</li>
+              <li>Redux</li>
+              <li>Angular</li>
+              <li>PHP</li>
+              <li>SQL</li>
+            </ul>
+            <ul id="lenguajes_3">
+              <li>MySQL</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>C++</li>
+              <li>Ruby</li>
+              <li>Linux</li>
+            </ul>
+      
+          <ul id="lenguajes_idioma">
+            <li>Ingles</li>
+            <li>avanzado</li>
+          </ul>
+
+          <a id="certificados_link" href="https://drive.google.com/drive/folders/10ba68nUmdU_Oy7nGn8oUexGqy85KSSnU?usp=sharing" target="_blank">
+            <svg id="" viewBox="0 0 512 512" width="120%" height="120%" style="enable-background:new 0 0 512 512;" xml:space="preserve"><polyline style="fill:#D6C8B0;" points="434.434,279.082 434.434,27.147 115.312,27.147 115.312,366.293 "/><polyline style="fill:#F9EED7;" points="405.747,251.934 405.747,0 86.625,0 86.625,339.145 "/><path style="fill:#FFD15C;" d="M458.517,478.602V287.553c0-20.334-16.483-36.817-36.817-36.817H257.815c-15.138,0-28.732-9.265-34.268-23.354l-7.255-18.468c-5.535-14.089-19.13-23.354-34.268-23.354H90.3c-20.334,0-36.817,16.483-36.817,36.817v256.226c0,18.445,14.953,33.398,33.398,33.398H425.12C443.564,512,458.517,497.047,458.517,478.602z"/><path style="fill:#EDBB4C;" d="M75.286,478.602V222.376c0-20.334,16.483-36.817,36.817-36.817H90.3c-20.334,0-36.817,16.483-36.817,36.817v256.226c0,18.445,14.953,33.397,33.398,33.397h21.803C90.239,511.999,75.286,497.047,75.286,478.602z"/><circle style="fill:#DBCEBA;" cx="167.819" cy="80.225" r="35.468"/><path style="fill:#D6C8B0;" d="M155.241,80.227c0-15.582,10.052-28.806,24.022-33.569c-3.592-1.225-7.439-1.899-11.447-1.899c-19.589,0-35.468,15.879-35.468,35.468c0,19.588,15.879,35.468,35.468,35.468c4.007,0,7.855-0.674,11.447-1.899C165.293,109.033,155.241,95.808,155.241,80.227z"/><path style="fill:#FF525D;" d="M132.347,151.163c0-19.589,15.879-35.468,35.468-35.468s35.468,15.879,35.468,35.468"/><path style="fill:#34ABE0;" d="M363.396,63.069H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,63.069,363.396,63.069z"/><path style="fill:#34ABE0;" d="M363.396,223.181h-46.573c-4.517,0-8.176-3.661-8.176-8.176s3.66-8.176,8.176-8.176h46.573c4.517,0,8.176,3.661,8.176,8.176S367.913,223.181,363.396,223.181z"/><path style="fill:#34ABE0;" d="M363.396,183.154H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,183.154,363.396,183.154z"/><path style="fill:#34ABE0;" d="M363.396,103.097H249.899c-4.515,0-8.176-3.661-8.176-8.176c0-4.515,3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176C371.572,99.437,367.913,103.097,363.396,103.097z"/><path style="fill:#34ABE0;" d="M363.396,143.126H249.899c-4.515,0-8.176-3.661-8.176-8.176s3.661-8.176,8.176-8.176h113.497c4.517,0,8.176,3.661,8.176,8.176S367.913,143.126,363.396,143.126z"/></svg>
+          </a>
+
+        </div>
+      </section>
+
+      <section id="pagina_contacto">
+
+        <div id="scroll_to_contacto"></div>
+      
+        <div id="form_contenedor"">
+          <form id="form" action="https://formspree.io/mjvapnag"
+          method="POST">
+            <div id="contacto_titulo">Envia tu mensaje</div>
+            <label id="form_guia_nombre" class="form_guias" for="form_nombre">Nombre</label>
+            <label id="form_guia_email" class="form_guias" for="form_email">Email</label>
+            <input id="form_nombre" type="text" name="nombre" required>
+            <input id="form_email" type="email" name="email" required>
+            <label id="form_guia_asunto" class="form_guias" for="form_asunto">Asunto</label>
+            <label id="form_guia_telefono" class="form_guias" for="form_telefono">Telefono (opcional)</label>
+            <input id="form_asunto" type="text" name="asunto" required>
+            <input id="form_telefono" type="tel" name="telefono">
+            <label id="form_guia_consulta" class="form_guias" for="textarea_1">Consulta</label>
+            <label></label>
+            <textarea id="textarea_1" name="consulta" class="input"></textarea>
+            <input type="submit" value="Enviar" id="form_boton_enviar">
+          </form>
+        </div>
+    
+        <div id="contacto_info" data-delay="1s">
+          <div id="info_contacto_titulo">Información de contacto</div>
+          <div id="info_direccion">Buenos Aires CABA<br />Balcarce 200</div>
+          <div id="info_email">sedent333@gmail.com</div>
+          <div id="info_telefono">11-2743-5575</div>
+          <div id="icono_direccion"><svg style="fill: var(--white);" width="110%" height="120%" viewBox="0 0 80 100"><g><path d="M30,26c3.86,0,7-3.141,7-7s-3.14-7-7-7s-7,3.141-7,7S26.14,26,30,26z M30,14c2.757,0,5,2.243,5,5s-2.243,5-5,5 s-5-2.243-5-5S27.243,14,30,14z"/><path d="M29.823,54.757L45.164,32.6c5.754-7.671,4.922-20.28-1.781-26.982C39.761,1.995,34.945,0,29.823,0 s-9.938,1.995-13.56,5.617c-6.703,6.702-7.535,19.311-1.804,26.952L29.823,54.757z M17.677,7.031C20.922,3.787,25.235,2,29.823,2 s8.901,1.787,12.146,5.031c6.05,6.049,6.795,17.437,1.573,24.399L29.823,51.243L16.082,31.4 C10.882,24.468,11.628,13.08,17.677,7.031z"/><path d="M42.117,43.007c-0.55-0.067-1.046,0.327-1.11,0.876s0.328,1.046,0.876,1.11C52.399,46.231,58,49.567,58,51.5 c0,2.714-10.652,6.5-28,6.5S2,54.214,2,51.5c0-1.933,5.601-5.269,16.117-6.507c0.548-0.064,0.94-0.562,0.876-1.11 c-0.065-0.549-0.561-0.945-1.11-0.876C7.354,44.247,0,47.739,0,51.5C0,55.724,10.305,60,30,60s30-4.276,30-8.5 C60,47.739,52.646,44.247,42.117,43.007z"/></g></svg></div>
+          <div id="icono_email"><svg style="fill: var(--white);" width="120%" height="120%" viewBox="0 0 800 1000"><g><path d="m467 61h-422c-24.813 0-45 20.187-45 45v300c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-300c0-24.813-20.187-45-45-45zm-65.19 30-145.81 108.785-145.81-108.785zm-356.81 0h15.021l187.009 139.523c2.661 1.985 5.815 2.977 8.97 2.977s6.309-.992 8.97-2.977l187.009-139.523h15.021c8.265 0 14.989 6.719 14.999 14.982l-225.999 168.796-225.999-168.796c.01-8.263 6.734-14.982 14.999-14.982zm202.024 214.518c2.662 1.988 5.819 2.982 8.976 2.982s6.314-.994 8.976-2.982l157.024-117.28v232.762h-332v-232.762zm-217.024 100.482v-262.575l30 22.407v255.168h-15c-8.271 0-15-6.729-15-15zm437 15h-15v-255.168l30-22.407v262.575c0 8.271-6.729 15-15 15z"/></g></svg></div>
+          <div id="icono_telefono"><svg style="fill: var(--white);" width="120%" height="120%" viewBox="0 0 800 1000"><g><path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818 c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453 l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646 C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539 c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92 c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315 C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173 c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061 l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579 l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379 c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801 c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z"/><path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z"/><path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533 c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533 S286.448,137.59,291.161,137.59z"/><path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z"/></g></svg></div>
+          <div id="icono_linkedin"><a href="https://www.linkedin.com/in/federico-nicolas-aguirre/" target="_blank">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve" width="100%" height="100%">
+<g>
+	<path style="fill:#0E76A8;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		S65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</a></div>
+          <div id="icono_github"><a href="https://github.com/Federico-Aguirre" target="_blank">
+            <?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="100%" height="100%"><g><g><path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          </a></div>
+        </div>
+    
+        <div id="contenedor_flecha_arriba" data-delay="1s">
+          <svg onclick="inicio()" viewBox="0 0 600 500"><path style="fill:var(--main_bg);" width="120%" height="120%" d="M245.333,0C109.839,0,0,109.839,0,245.333s109.839,245.333,245.333,245.333 s245.333-109.839,245.333-245.333C490.514,109.903,380.764,0.153,245.333,0z"/><path style="fill:#FAFAFA;" d="M267.968,82.219c-12.496-12.492-32.752-12.492-45.248,0L104.533,200.533 c-18.889,18.894-18.889,49.522,0,68.416c19.139,18.289,49.277,18.289,68.416,0l19.2-19.2v123.584 c0,29.455,23.878,53.333,53.333,53.333c29.455,0,53.333-23.878,53.333-53.333V249.749l19.2,19.2 c19.139,18.289,49.277,18.289,68.416,0c18.889-18.894,18.889-49.522,0-68.416L267.968,82.219z"/></svg>
+        </div>
+      </section>
+    </div>
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="main.js"></script>
+  </body>
+</html>
