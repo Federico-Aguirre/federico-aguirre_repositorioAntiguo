@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, 
+            initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover"
+        />
+        <title>Mi portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body onload="">
+        <div class="hide_menu">
+            <div class="hide_menu2">
+                <div class="hide_navbar" onclick="slide()">
+                    <div class="navbar_line"></div>
+                    <div class="navbar_line"></div>
+                    <div class="navbar_line"></div>
+                </div>
+                <div onclick="hide_inicio()" class="hide_navmenu">Inicio</div>
+                <div onclick="hide_proyectos()" class="hide_navmenu">
+                    Proyectos
+                </div>
+                <div onclick="hide_acerca_de_mi()" class="hide_navmenu">
+                    Acerca de mi
+                </div>
+                <div onclick="hide_contacto()" class="hide_navmenu">
+                    Contacto
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="header_contenedor">
+                <div class="paginas pagina1_link" onclick="inicio()">
+                    Inicio
+                </div>
+                <div class="paginas pagina2_link" onclick="proyectos()">
+                    Proyectos
+                </div>
+                <div class="paginas pagina3_link" onclick="acerca_de_mi()">
+                    Acerca de mi
+                </div>
+                <div class="paginas pagina4_link" onclick="contacto()">
+                    Contacto
+                </div>
+                <div class="navbar" onclick="slide()">
+                    <div class="navbar_line"></div>
+                    <div class="navbar_line"></div>
+                    <div class="navbar_line"></div>
+                </div>
+            </div>
+
+            <section class="pagina_intro">
+                <div class="intro_titulo" data-delay="1s">
+                    &lt;p>Si se puede imaginar, se puede programar &lt;/p>
+                </div>
+                <div class="intro_titulo_sub" data-delay="1s">
+                    Desarrollador web fullstack
+                </div>
+                <div class="contenedor_flecha_abajo">
+                    <img
+                        class="flecha"
+                        onclick="proyectos()"
+                        src="./imagenes/flecha.svg"
+                        alt=""
+                    />
+                    <div class="texto_flecha">Ver proyectos</div>
+                </div>
+            </section>
+
+            <section class="pagina_proyectos">
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <a
+                            href="https://github.com/Federico-Aguirre/react-socket.io"
+                            target="_blank"
+                            class="swiper-slide"
+                        >
+                            <div class="card_image"></div>
+                            <div class="card_text">
+                                Chat app creado con React.js, Socket.io,
+                                Express, Cors.
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/Federico-Aguirre/react-crud"
+                            target="_blank"
+                            class="swiper-slide"
+                        >
+                            <div class="card_image"></div>
+                            <div class="card_text">
+                                React CRUD creado con React.js, MySQL, Express,
+                                Cors.
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/Federico-Aguirre/spa-react"
+                            target="_blank"
+                            class="swiper-slide"
+                        >
+                            <div class="card_image"></div>
+                            <div class="card_text">
+                                Spa-React creado con React.js, react-router-dom
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/Federico-Aguirre/php-sql-crud"
+                            target="_blank"
+                            class="swiper-slide"
+                        >
+                            <div class="card_image"></div>
+                            <div class="card_text">
+                                Simple CRUD creado con php, MySQL
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/Federico-Aguirre/figma-project"
+                            class="swiper-slide"
+                        >
+                            <div class="figma_img"></div>
+                            <div class="card_text">
+                                Pagina de inicio creado con Figma
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="scroll_to_perfil"></div>
+            </section>
+
+            <section class="pagina_acerca_de_mi">
+                <div class="perfil_nombre">Federico Nicolás Aguirre</div>
+
+                <div class="perfil_texto" data-delay="1s">
+                    Siempre me atrajo la tecnologia, y en el 2018 pude iniciar
+                    con mis aprendizajes. Disfruto dar vida a las ideas en el
+                    navegador, aprendiendo y superando nuevos desafíos. Mi
+                    especialidad es el desarrollo front-end con foco en producir
+                    páginas y aplicaciones web que sean rápidas, de fácil uso,
+                    con un óptimo diseño ux/ui y accesible en un amplio rango de
+                    dispositivos y navegadores.
+                </div>
+
+                <div class="contenedor_lenguajes">
+                    <div class="lenguajes_titulo_1">
+                        Conocimientos tecnicos
+                    </div>
+
+                    <ul class="lenguajes_1">
+                        <li>HTML</li>
+                        <li>Diseño UX/UI</li>
+                        <li>Git+github</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>EcmaScript</li>
+                    </ul>
+                    <ul class="lenguajes_2">
+                        <li>JQuery</li>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>ReactJS</li>
+                        <li>Redux</li>
+                        <li>Angular</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                    <ul class="lenguajes_3">
+                        <li>MySQL</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="contenedor_lenguajes_2">
+                    <div class="lenguajes_titulo_idioma">Idioma</div>
+                    <ul class="lenguajes_idioma">
+                        <li>Ingles</li>
+                        <li>avanzado</li>
+                    </ul>
+                    <div class="lenguajes_titulo_link">Certificados</div>
+                    <a href="https://drive.google.com/drive/folders/10ba68nUmdU_Oy7nGn8oUexGqy85KSSnU?usp=sharing" target="_blank">
+                        <img
+                            src="./imagenes/certificados.svg"
+                        />
+                    </a>
+                </div>
+
+                <div class="scroll_to_contacto"></div>
+
+            </section>
+
+            <section class="pagina_contacto">
+
+                <div class="form_contenedor">
+                    <form
+                        class="form"
+                        action="https://formspree.io/mjvapnag"
+                        method="POST"
+                    >
+                        <div>Envia tu mensaje</div>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" required />
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required />
+                        <label for="asunto">Asunto</label>
+                        <input id="asunto" type="text" name="asunto" required />
+                        <label for="textarea_1">Consulta</label>
+                        <textarea id="textarea_1" name="consulta"></textarea>
+                        <input
+                            type="submit"
+                            value="Enviar"
+                            class="form_boton_enviar"
+                        />
+                    </form>
+                </div>
+
+                <div class="contacto_info" data-delay="1s">
+                    <div class="info_contacto_titulo">
+                        Información de contacto
+                    </div>
+                    <div class="info_direccion">
+                        Buenos Aires CABA<br />Balcarce 200
+                    </div>
+                    <div class="info_email">sedent333@gmail.com</div>
+                    <div class="info_telefono">11-2743-5575</div>
+                    <div class="icono_direccion">
+                        <img src="./imagenes/direccion.svg" alt="" />
+                    </div>
+                    <div class="icono_email">
+                        <img src="./imagenes/email.svg" alt="" />
+                    </div>
+                    <div class="icono_telefono">
+                        <img src="./imagenes/telefono.svg" alt="" />
+                    </div>
+                    <div class="icono_linkedin">
+                        <a
+                            href="https://www.linkedin.com/in/federico-nicolas-aguirre/"
+                            target="_blank"
+                        >
+                            <img src="./imagenes/linkedin.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="icono_github">
+                        <a
+                            href="https://github.com/Federico-Aguirre"
+                            target="_blank"
+                        >
+                            <img src="./imagenes/github.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contenedor_flecha_arriba" data-delay="1s">
+                    <img
+                        onclick="inicio()"
+                        src="./imagenes/flecha.svg"
+                        alt=""
+                    />
+                </div>
+            </section>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
