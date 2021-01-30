@@ -54,7 +54,7 @@ function hide_acerca_de_mi() {
 
 function hide_contacto() {
   contenedor.classList.toggle('is_flipped');
-  document.querySelector(".scroll_to_contacto").scrollIntoView({ behavior: 'smooth' });
+  contenedor.scrollTo({ top: 1820, behavior: 'smooth' });
 }
 
 //indicaciones de envio de scroll en header
@@ -72,7 +72,7 @@ function acerca_de_mi() {
 }
 
 function contacto() {
-  document.querySelector(".scroll_to_contacto").scrollIntoView({ behavior: 'smooth' });
+    contenedor.scrollTo({ top: 1800, behavior: 'smooth' });
 }
 
 //subrayado en header
