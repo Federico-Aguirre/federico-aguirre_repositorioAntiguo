@@ -471,6 +471,7 @@ a {
 }
 
 .pagina_contacto {
+    background-color: var(--black);
     display: grid;
     grid-area: 5/1/5/-1;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
