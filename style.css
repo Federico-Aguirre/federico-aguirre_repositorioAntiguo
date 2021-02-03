@@ -471,7 +471,7 @@ a {
 
 .pagina_contacto {
     background: url(./imagenes/imagen_contacto.jpg) no-repeat;
-    background-size: 100% 100% cover;
+    background-size: 100% 100% center center/cover;
     display: grid;
     grid-area: 5/1/5/-1;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
